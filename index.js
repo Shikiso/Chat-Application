@@ -5,13 +5,6 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
 
-var nextID = 0;
-var users = {};
-
-function give_user_id(user){
-    
-}
-
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/templates/index.html');
 });
